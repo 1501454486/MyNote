@@ -1,0 +1,49 @@
+联合概率分布律的性质：
+\begin{itemize}
+    \item [1.]$p_{ij} \geq 0$ , i,j = 1,2, ...
+    \item [2.]$\sum\limits _{i=1}^{\infty}\sum\limits_{j=1}^{\infty}p_{ij}=1$
+\end{itemize}
+
+~\\
+例1.1设随机变量X在1、2、3、4四个整数中等可能地取一个值，
+另一个随机变量Y在1 $\sim$ X中等可能地曲一整数值，
+试求(X,Y)的联合概率分布。
+
+
+(X,Y)的联合概率分布为：
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \diagbox{X}{Y}&1&2&3&4\\
+        \hline
+        1&1/4&0&0&0\\
+        \hline
+        2&1/8&1/8&0&0\\
+        \hline
+        3&1/12&1/12&1/12&0\\
+        \hline
+        4&1/16&1/16&1/16&1/16\\
+        \hline
+    \end{tabular}
+\end{center}
+
+~\\
+~\\
+~\\
+(二)边际分布
+
+
+对于离散型随机变量(X,Y)，联合分布律为
+$$P(X=x_i,Y=y_j)=p_{ij},i,j=1,2,...$$
+
+
+X,Y的边际(边缘)分布律为：
+
+
+$$P(Y=y_j)=P(X<+\infty,Y=y_j)=\sum _{i=1}^\infty p_{ij}=p_{\cdot j} \text{ j=1,2,...}$$
+$$P(X=x_i)=P(X=x_i,Y<+\infty)=\sum _{j=1}^\infty p_{ij}=p_{i\cdot}\text{ i=1,2,...}$$
+
+
+
+
+\newpage

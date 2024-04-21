@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs,diagbox
+ ,multicol, tipa,pdfpages}
+
+\title{{\Huge{\textbf{NOTE}}}\\}
+\author{理塘顶真·cxk}
+\date{\today}
+\linespread{1.5}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{example}[theorem]{例}
+\newtheorem{proposition}[theorem]{命题}
+
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{center}
+    \Huge\textbf{前言}
+\end{center}~\
+
+这是笔记的前言部分. 
+~\\
+\begin{flushright}
+    \begin{tabular}{c}
+        Dylaaan\\
+        \today
+    \end{tabular}
+\end{flushright}
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\chapter{writing}
+\section{Class 4}
+\input{writing/class_4.tex}
+\section{Class 5}
+\input{writing/class_5.tex}
+\section{Class 6}
+\input{writing/class_6.tex}
+
+\chapter{六级真题}
+\section{2022.6第一套}
+\input{CET6/2022.6.1.tex}
+\section{2022.9第一套}
+\input{CET6/2022.9.1.tex}
+
+\chapter{外刊}
+\section{2024.4.11外刊}
+\input{foreign publication/fp1.tex}
+
+\chapter{长难句}
+\section{Week7}
+\input{长难句/week7.tex}
+
+\chapter{CS61B}
+\section{Section 1}
+\input{CS61B/1.tex}
+
+
+
+\end{document}

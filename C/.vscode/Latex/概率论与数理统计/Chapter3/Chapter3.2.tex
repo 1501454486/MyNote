@@ -1,0 +1,38 @@
+\textbf{(一)联合分布函数}
+
+
+定义：设(X,Y)是二元随机变量，对于任意实数x,y,二元
+函数$F(x,y)=P\{(X\leq x)\cap (Y\leq y)\}=P(X\leq x,Y\leq y)$
+称为二元随机变量(X,Y)的联合分布函数。
+
+
+~\\
+\begin{center}
+    \textbf{分布函数F(X,Y)的性质}
+\end{center}
+\begin{itemize}
+    \item [1°]F(x,y)关于x,y单调不减，即：
+    $$x_1 < x_2\Rightarrow F(x_1,y) \leq F(x_2,y)$$
+    $$y_1 < y_2\Rightarrow F(x,y_1) \leq F(x,y_2)$$
+    \item [2°]$0\leq F(x,y)\leq 1$，
+    
+
+    对任意x,y，$F(-\infty,y)=F(x,-\infty)=F(-\infty,-\infty)=0$
+    \item [3°]F(x,y)关于x,y右连续，即：
+    $$\lim\limits_{\epsilon \to 0^+}F(x+\epsilon,y)=F(x,y)$$
+    $$\lim\limits_{\epsilon \to 0^+}F(x,y+\epsilon)=F(x,y)$$
+    \item [4°]若$x_1<x_2$，$y_1<y_2 \Rightarrow 
+    F(x_2,y_2)-F(x_2,y_1)-F(x_1,y_2)+F(x_1,y_1)\geq 0$
+\end{itemize}
+
+\textbf{(二)边际(边缘)分布函数}
+
+
+二元随机变量(X,Y)作为整体，有分布函数F(x,y).X和Y都是
+随机变量，它们的分布函数分别记为$F_X(x)$和
+$F_Y(y)$，称为边际分布函数.
+$$F_X(x)=F(x,+\infty)$$
+$$F_Y(y)=F(+\infty,y)$$
+
+
+\newpage

@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}概率论的基本概念}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}随机变量及其分布}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}随机变量}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}离散型随机变量及其分布}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}随机变量的分布函数}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.4}连续性随机变量及其密度函数}{2}{section.2.4}%
+\contentsline {section}{\numberline {2.5}随机变量函数的分布}{2}{section.2.5}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}多元随机变量及其分布}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}二元离散型随机变量}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}二元随机变量的分布函数}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}二元连续性随机变量}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}随机变量的独立性}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}二元随机变量函数的分布}{14}{section.3.5}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}随机变量的数字特征}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}数学期望}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}方差}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}协方差、相关系数}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}其它数字特征}{16}{section.4.4}%

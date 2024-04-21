@@ -1,0 +1,25 @@
+%导言区
+%文档类型，还可以是book,report,letter
+\documentclass{article}
+
+%还可以有标题、作者、时间
+\title{My First Document}
+\author{LXY}
+\date{\today}       %\today表示今天
+%这一部分设置好后，为了正确使用，还需要在正文区中使用\maketitle命令
+
+%正文区
+\begin{document}
+%注意，如果是letter类的不能加\maketitle
+    \maketitle
+    Hello world!
+    %注意，如果需要表示换行，可以通过空一行的方式
+
+    Let $f(x)$ be defined by the formula 
+    $f(x)=3x_1^2+x-1$.
+
+    % $f(x)$此时是在行间插入；
+    % $$f(x)$$此时是将公式单独空一行输出
+    Let $f(x)$ be defined by the formula 
+    $$f(x)=3x_1^2+x-1$$.
+\end{document}

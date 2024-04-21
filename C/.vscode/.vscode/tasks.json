@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "label": "complie",
+      "type": "shell",  //shell中运行，即cmd
+      "command": "g++", //g++命令
+      //命令操作
+      //${file} 指 执行文件的绝对路径（带文件名加后缀）
+      //${fileDirname} 指 执行文件的父路径
+      //${fileBasenameNoExtension} 指 执行文件的文件名（不带后缀）
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ],
+  "version": "2.0.0"
+}

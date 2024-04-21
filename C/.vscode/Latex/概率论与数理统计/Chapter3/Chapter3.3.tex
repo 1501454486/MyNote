@@ -1,0 +1,134 @@
+\textbf{(一)联合概率密度函数}
+
+
+定义：对于二元随机变量$(X,Y)$的分布函数$F(x,y)$,如果存在非负函数
+$f$使对于任意$x$,$y$，有$$F(x,y)=\int _{-\infty}^y\int _{-\infty}^x
+f(u,v)dudv$$
+称$(X,Y)$为二元连续型随机变量，称$f(x,y)$为二元随机变量$(X,Y)$的
+(联合)概率密度函数
+
+
+\textbf{联合密度函数性质}
+\begin{itemize}
+    \item [1.]$f(x,y)\geq 0$
+    \item [2.]$\int _{-\infty}^{+\infty}\int _{-\infty}^{+\infty}
+    f(x,y)dxdy=1$
+    \item [3.]设$G$是平面上区域，$(X,Y)$落在$G$内的概率
+    $P\{(X,Y)\in G\}=\iint \limits_{G}f(x,y)dxdy$
+    \item [4.]在$f(x,y)$的连续点$(x,y)$，有
+    $\dfrac{\partial ^2 F(x,y)}{\partial x \partial y}=f(x,y)$
+\end{itemize}
+
+
+\textbf{(二)边际(边缘)概率密度函数}
+
+
+设连续性随机变量$(X,Y)$的密度函数为$f(x,y)$，则$X,Y$的边际概率密度函数为别为：
+$$f_X(x)=\int _{-\infty}^{+\infty}f(x,y)dy$$
+$$f_Y(y)=\int _{-\infty}^{+\infty}f(x,y)dx$$
+
+
+\textbf{(三)条件分布函数}
+
+
+定义：若$P(Y=y)>0$，则在$\{Y=y\}$条件下，$X$的条件分布函数为：
+$$F_{X|Y}(x|y)=P(X\leq x|Y=y)=\dfrac{P(X\leq x,Y=y)}{P(Y=y)}$$
+若$P(Y=y)=0$，但对任给$\epsilon >0,P(y<Y+\epsilon \leq y+\epsilon)>0$，
+则在$\{Y=y\}$条件下，$X$的条件分布函数为：
+$$F_{X|Y}(x|y)=\lim\limits_{\epsilon \to 0^+}P(X\leq x|y<Y\leq y+\epsilon)
+=\lim\limits_{\epsilon \to 0^+} \dfrac{P(X\leq x,y<Y\leq y+\epsilon)}{P(y<Y\leq y+\epsilon)}$$
+仍记为$P(X\leq x|Y=y)$
+
+
+事实上，
+$$F_X(x)=F(x,+\infty)=\int _{-\infty}^x [\int _{-\infty}^{+\infty}f(u,v)dv]du
+=\int _{-\infty}^xf_X(u)du$$
+
+
+同理：
+$$F_Y(y)=F(+\infty,y)=\int _{-\infty}^y[\int _{-\infty}^{+\infty}f(u,v)du]dv
+=\int _{-\infty}^y f_Y(v)dv$$
+
+
+定义：条件概率密度函数
+
+
+设二元随机变量$(X,Y)$的密度函数为$f(x,y)$，$X,Y$的边际密度函数为$f_X(x),f_Y(y)$，
+则在$\{Y=y\}$条件下$X$的条件密度函数为：
+$$f_{X|Y}(x|y)=\dfrac{f(x,y)}{f_Y(y)},f_Y(y)>0$$
+
+
+在$\{X=x\}$条件下，$Y$的条件密度函数为：
+$$f_{Y|X}(y|x)=\dfrac{f(x,y)}{f_X(x)},f_X(x)>0$$
+
+
+即$F_{X|Y}(x|y)=\int _{-\infty}^x\dfrac{f(u,y)}{f_Y(y)}du$
+\begin{align}
+    \because F_{X|Y}(x|y)&=\lim \limits_{\Delta y \to 0^+} 
+    \dfrac{P(X\leq x,y<Y\leq y+\Delta y)}{P(y<Y\leq y+\Delta y)}\notag
+    \\&= \lim \limits_{\Delta y \to 0^+} 
+    \dfrac{\dfrac{1}{\Delta y}\int _{-\infty}^x ds \int _y^{y+\Delta y}f(u,v)dv}{\dfrac{1}{\Delta y}\int _y^{y+\Delta y}f_Y(t)dt}\notag
+    \\&=\dfrac{\int _{-\infty}^xf(u,y)du}{f_Y(y)}\notag
+    \\&=\int _{-\infty}^x \dfrac{f(u,y)}{f_Y(y)}du\notag
+    \\\therefore F_{X|Y}(x|y)=\int _{-\infty}^x\dfrac{f(u,y)}{f_Y(y)}du \notag
+\end{align}
+
+
+\textbf{(四)二元均匀分布与二元正太分布}
+
+
+二元均匀分布：
+
+
+若二元随机变量$(X,Y)$在二维有界区域$D$上取值，且具有概率密度函数
+$$
+f(x,y) = \begin{cases}
+    \dfrac{1}{\text{D的面积}}, & (x,y) \in D \\
+    0, & \text{其他}
+\end{cases}
+$$
+
+
+若$D_1$是$D$的子集，则
+$$P\{(X,Y)\in D_1\}=\iint \limits_{D_1}f(x,y)dxdy
+=\dfrac{D_1\text{的面积}}{D\text{的面积}}$$
+
+
+二元正太分布：
+
+
+设二元随机变量$(X,Y)$的概率密度函数为：
+$$f(x,y)=\dfrac{1}{2\pi \sigma_1\sigma_2 \sqrt{1-\rho^2}}
+\cdot exp\{\dfrac{-1}{2(1-\rho^2)}[\dfrac{(x-\mu_1)^2}{\sigma_1^2}
+-2\rho\dfrac{(x-\mu_1)(y-\mu_2)}{\sigma_1\sigma_2}+
+\dfrac{(y-\mu_2)^2}{\sigma_2^2}]\}$$
+
+
+$(-\infty<x<+\infty,-\infty<y<+\infty)$
+
+
+其中$\mu_1,\mu_2,\sigma_1,\sigma_2$都是常数，
+且$\sigma_1>0,\sigma_2>0,-1<\rho<1$
+
+
+称$(X,Y)$为服从参数为$\mu_1,\mu_2,\sigma_1,\sigma_2,\rho$
+的二元正太分布，记为：
+$$(X,Y)\sim N(\mu_1,\mu_2,\sigma_1^2,\sigma_2^2,\rho)$$
+
+
+\begin{align}
+    f_{Y|X}(y|x)&=\dfrac{f(x,y)}{f_X(x)}\notag
+    \\&=\dfrac{1}{\sqrt{2\pi}\sigma_2\sqrt{1-\rho^2}}
+    \cdot exp\{\dfrac{-1}{2(1-\rho^2)\sigma_2^2}[y-(\mu_2+\rho\dfrac{\sigma_2}{\sigma_1}(x-\mu_1))]^2\}\notag
+\end{align}
+
+
+即在$\{X=x\}$条件下，$Y$的条件分布是正太分布
+$$N(\mu_2+\rho\dfrac{\sigma_2}{\sigma_1}(x-\mu_1),(1-\rho^2)\sigma_2^2)$$
+
+
+同理，在$\{Y=y\}$条件下，$X$的条件分布是正太分布
+$$N(\mu_1+\rho\dfrac{\sigma_1}{\sigma_2}(y-\mu_2),(1-\rho^2)\sigma_1^2)$$
+
+
+\newpage

@@ -1,0 +1,52 @@
+\begin{center}
+    \textbf{\large{20-21期中}}
+\end{center}
+
+
+12.判别级数$\sum\limits _{n=1}^\infty 
+\ln (1+\dfrac{(-1)^n}{n^p-(-1)^n})(0<p<1)$的敛散性(要讨论是绝对收敛、条件收敛还是收敛)
+\begin{align}
+    \because \ln [1+\dfrac{(-1)^n}{n^p-(-1)^n}] &= 
+    \ln \dfrac{n^p}{n^p-(-1)^n} 
+    = -\ln [1-\dfrac{(-1)^n}{n^p}] \notag
+    \\ &= \dfrac{(-1)^n}{n^p} + \dfrac{1}{2n^{2p}}+o(\dfrac{1}{n^{2p}}) \notag
+\end{align}
+
+且$\dfrac{(-1)^n}{n^p}$条件收敛
+
+
+当$\dfrac{1}{2}<p<1$时$\dfrac{1}{2n^{2p}}$绝对收敛，
+则原级数条件收敛；
+
+
+当$0<p\leq \dfrac{1}{2}$时$\dfrac{1}{2n^{2p}}$发散，
+则原级数发散
+~\\
+
+\textbf{注：此处用到了二级结论：条件收敛 + 绝对收敛 = 条件收敛}，证明如下：
+
+
+设级数$\sum a_n$条件收敛，级数$\sum b_n$绝对收敛，
+下证级数$\sum (a_n+b_n)$条件收敛
+
+
+反证法：假设级数$\sum (a_n+b_n)$绝对收敛，
+
+
+由题知：级数$\sum a_n$收敛，级数$\sum \left \vert a_n \right \vert $发散，
+级数$\sum b_n$收敛，级数$\sum \left \vert b_n \right \vert$收敛
+
+
+\textbf{由绝对值不等式：}
+$$\left \vert a_n+b_n \right \vert \geq |b_n|-|a_n|$$
+
+
+即：
+$$|b_n| \leq |a_n+b_n| + |a_n|$$
+
+
+$\because$ 级数$\sum |a_n+b_n|$收敛，级数$\sum |a_n|$收敛
+
+$\therefore$ 级数$\sum |b_n|$收敛，矛盾，则假设不成立
+
+$\therefore$ 级数$\sum (a_n+b_n)$条件收敛

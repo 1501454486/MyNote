@@ -1,0 +1,69 @@
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs,diagbox}
+
+\title{{\Huge{\textbf{概率论与数理统计}}}\\——副标题}
+\author{Dylaaan}
+\date{\today}
+\linespread{1.5}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{example}[theorem]{例}
+\newtheorem{proposition}[theorem]{命题}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{center}
+    \Huge\textbf{前言}
+\end{center}~\
+
+这是笔记的前言部分. 
+~\\
+\begin{flushright}
+    \begin{tabular}{c}
+        Dylaaan\\
+        \today
+    \end{tabular}
+\end{flushright}
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\chapter{概率论的基本概念}
+
+\chapter{随机变量及其分布}
+\section{随机变量}
+\section{离散型随机变量及其分布}
+\section{随机变量的分布函数}
+\section{连续性随机变量及其密度函数}
+\section{随机变量函数的分布}
+
+\chapter{多元随机变量及其分布}
+\section{二元离散型随机变量}
+\input{Chapter3/Chapter3.1.tex}
+\section{二元随机变量的分布函数}
+\input{Chapter3/Chapter3.2.tex}
+\section{二元连续性随机变量}
+\input{Chapter3/Chapter3.3.tex}
+\section{随机变量的独立性}
+\input{Chapter3/Chapter3.4.tex}
+\section{二元随机变量函数的分布}
+
+\chapter{随机变量的数字特征}
+\section{数学期望}
+\input{Chapter4/Chapter4.1.tex}
+\section{方差}
+\section{协方差、相关系数}
+\section{其它数字特征}
+
+\end{document}
