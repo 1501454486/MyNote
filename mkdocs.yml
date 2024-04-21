@@ -1,0 +1,29 @@
+site_name: 魔法手册
+
+theme:
+  name: "material"
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default 
+      toggle: 
+        icon: material/weather-night
+        name: 切换暗色模式
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle: 
+        icon: material/weather-sunny
+        name: 切换亮色模式
+
+  features:
+    - navigation.tabs # 页面上方的标题栏
+
+plugins:
+- mkdocstrings:
+    handlers: 
+      python: 
+        paths: [src]
+
+nav:
+  - Home: index.md
+  - Test: test.md
